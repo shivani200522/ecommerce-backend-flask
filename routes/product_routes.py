@@ -2,50 +2,46 @@ from flask import Blueprint, request, jsonify
 from database.db import db
 from models.product import Product
 from models.user import User
+from flask_jwt_extended import jwt_required, get_jwt_identity
+import logging
 
 product_bp = Blueprint("product", __name__)
 
 @product_bp.route("/add-product", methods=["POST"])
+@jwt_required()
 def add_product():
-    data = request.get_json()
+    data = request.json
 
-    name = data.get("name")
-    price = data.get("price")
-    file_url = data.get("file_url")
-    seller_id = data.get("seller_id")
+    user_id = get_jwt_identity()
 
-    if not name or not price or not file_url or not seller_id:
-        return jsonify({"error": "Missing fields"}), 400
+    # 🔥 GET USER FROM DB
+    user = User.query.get(user_id)
 
-    seller = User.query.get(seller_id)
+    if user.role != "seller":
+        return {"message": "Only sellers can add products"}, 403
 
-    if not seller or seller.role != "seller":
-        return jsonify({"error": "Invalid seller"}), 400
-
-    product = Product(
-        name=name,
-        price=price,
-        file_url=file_url,
-        seller_id=seller_id
+    new_product = Product(
+        name=data["name"],
+        price=data["price"],
+        file_url=data["file_url"],
+        seller_id=user.id
     )
 
-    db.session.add(product)
+    db.session.add(new_product)
     db.session.commit()
+    logging.info(f"Product added: {new_product.name} by user {user.id}")
 
-    return jsonify({"message": "Product added"})
+    return {"message": "Product added successfully"}
 
 @product_bp.route("/products", methods=["GET"])
 def get_products():
     products = Product.query.all()
 
-    result = []
-    for p in products:
-        result.append({
+    return [
+        {
             "id": p.id,
             "name": p.name,
-            "price": p.price,
-            "file_url": p.file_url,
-            "seller_id": p.seller_id
-        })
-
-    return jsonify(result)
+            "price": p.price
+        }
+        for p in products
+    ]

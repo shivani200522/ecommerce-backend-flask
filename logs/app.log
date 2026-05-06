@@ -1,0 +1,108 @@
+2026-05-06 21:47:19,668 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-06 21:47:19,668 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-06 21:47:19,669 - INFO -  * Restarting with stat
+2026-05-06 21:47:20,438 - WARNING -  * Debugger is active!
+2026-05-06 21:47:20,442 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 21:47:31,997 - INFO - 127.0.0.1 - - [06/May/2026 21:47:31] "[33mGET /productshttp://127.0.0.1:5000/products HTTP/1.1[0m" 404 -
+2026-05-06 21:47:32,075 - INFO - 127.0.0.1 - - [06/May/2026 21:47:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-06 21:51:22,889 - INFO -  * Detected change in 'C:\\Users\\Mallikarjuna\\ecommerce_backend\\app.py', reloading
+2026-05-06 21:51:23,001 - INFO -  * Restarting with stat
+2026-05-06 21:51:23,999 - WARNING -  * Debugger is active!
+2026-05-06 21:51:24,002 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 21:51:28,215 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-06 21:51:28,216 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-06 21:51:28,217 - INFO -  * Restarting with stat
+2026-05-06 21:51:28,974 - WARNING -  * Debugger is active!
+2026-05-06 21:51:28,977 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 21:51:32,928 - INFO - 127.0.0.1 - - [06/May/2026 21:51:32] "[33mGET /productshttp://127.0.0.1:5000/products HTTP/1.1[0m" 404 -
+2026-05-06 22:06:46,036 - INFO - 127.0.0.1 - - [06/May/2026 22:06:46] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+2026-05-06 22:08:09,814 - INFO - User logged in: seller3
+2026-05-06 22:08:09,847 - INFO - 127.0.0.1 - - [06/May/2026 22:08:09] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-05-06 22:08:56,518 - INFO - User logged in: seller3
+2026-05-06 22:08:56,525 - INFO - 127.0.0.1 - - [06/May/2026 22:08:56] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-05-06 22:09:48,697 - INFO - User logged in: seller3
+2026-05-06 22:09:48,707 - INFO - 127.0.0.1 - - [06/May/2026 22:09:48] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-05-06 22:11:00,220 - INFO -  * Detected change in 'C:\\Users\\Mallikarjuna\\ecommerce_backend\\app.py', reloading
+2026-05-06 22:11:00,324 - INFO -  * Restarting with stat
+2026-05-06 22:11:01,179 - WARNING -  * Debugger is active!
+2026-05-06 22:11:01,182 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:11:23,690 - INFO -  * Detected change in 'C:\\Users\\Mallikarjuna\\ecommerce_backend\\app.py', reloading
+2026-05-06 22:11:23,786 - INFO -  * Restarting with stat
+2026-05-06 22:11:24,590 - WARNING -  * Debugger is active!
+2026-05-06 22:11:24,592 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:11:29,315 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-06 22:11:29,315 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-06 22:11:29,317 - INFO -  * Restarting with stat
+2026-05-06 22:11:30,076 - WARNING -  * Debugger is active!
+2026-05-06 22:11:30,079 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:11:33,260 - INFO - User logged in: seller3
+2026-05-06 22:11:33,267 - INFO - 127.0.0.1 - - [06/May/2026 22:11:33] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-05-06 22:12:56,261 - INFO -  * Detected change in 'C:\\Users\\Mallikarjuna\\ecommerce_backend\\app.py', reloading
+2026-05-06 22:12:56,363 - INFO -  * Restarting with stat
+2026-05-06 22:12:57,234 - WARNING -  * Debugger is active!
+2026-05-06 22:12:57,238 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:14:07,519 - INFO -  * Detected change in 'C:\\Users\\Mallikarjuna\\ecommerce_backend\\app.py', reloading
+2026-05-06 22:14:07,618 - INFO -  * Restarting with stat
+2026-05-06 22:14:08,470 - WARNING -  * Debugger is active!
+2026-05-06 22:14:08,474 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:14:11,723 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-06 22:14:11,723 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-06 22:14:11,725 - INFO -  * Restarting with stat
+2026-05-06 22:14:12,570 - WARNING -  * Debugger is active!
+2026-05-06 22:14:12,572 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:14:19,246 - INFO - TEST LOG WORKING
+2026-05-06 22:14:19,247 - INFO - 127.0.0.1 - - [06/May/2026 22:14:19] "GET /test-log HTTP/1.1" 200 -
+2026-05-06 22:15:14,738 - INFO - User logged in: seller3
+2026-05-06 22:15:14,744 - INFO - 127.0.0.1 - - [06/May/2026 22:15:14] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-05-06 22:16:16,425 - INFO -  * Detected change in 'C:\\Users\\Mallikarjuna\\ecommerce_backend\\routes\\auth_routes.py', reloading
+2026-05-06 22:16:16,576 - INFO -  * Restarting with stat
+2026-05-06 22:16:17,483 - WARNING -  * Debugger is active!
+2026-05-06 22:16:17,486 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:16:31,411 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-06 22:16:31,411 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-06 22:16:31,413 - INFO -  * Restarting with stat
+2026-05-06 22:16:32,293 - WARNING -  * Debugger is active!
+2026-05-06 22:16:32,296 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:16:48,027 - INFO - User logged in: seller3
+2026-05-06 22:16:48,027 - INFO - 127.0.0.1 - - [06/May/2026 22:16:48] "POST /login HTTP/1.1" 200 -
+2026-05-06 22:18:05,903 - INFO - Product added: Flask Course by user 5
+2026-05-06 22:18:05,904 - INFO - 127.0.0.1 - - [06/May/2026 22:18:05] "POST /add-product HTTP/1.1" 200 -
+2026-05-06 22:18:48,549 - INFO - 127.0.0.1 - - [06/May/2026 22:18:48] "GET /products HTTP/1.1" 200 -
+2026-05-06 22:20:39,048 - INFO - 127.0.0.1 - - [06/May/2026 22:20:39] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+2026-05-06 22:20:52,787 - INFO - User logged in: buyer2
+2026-05-06 22:20:52,788 - INFO - 127.0.0.1 - - [06/May/2026 22:20:52] "POST /login HTTP/1.1" 200 -
+2026-05-06 22:21:58,550 - INFO - Order placed by user 6 for product 4
+2026-05-06 22:21:58,551 - INFO - 127.0.0.1 - - [06/May/2026 22:21:58] "POST /create-order HTTP/1.1" 200 -
+2026-05-06 22:22:33,255 - INFO - 127.0.0.1 - - [06/May/2026 22:22:33] "[33mGET /orders HTTP/1.1[0m" 404 -
+2026-05-06 22:22:56,719 - INFO - 127.0.0.1 - - [06/May/2026 22:22:56] "GET /orders/1 HTTP/1.1" 200 -
+2026-05-06 22:23:05,124 - INFO - 127.0.0.1 - - [06/May/2026 22:23:05] "GET /orders/2 HTTP/1.1" 200 -
+2026-05-06 22:23:23,464 - INFO - 127.0.0.1 - - [06/May/2026 22:23:23] "GET /orders/1 HTTP/1.1" 200 -
+2026-05-06 22:23:32,617 - INFO - 127.0.0.1 - - [06/May/2026 22:23:32] "GET /orders/3 HTTP/1.1" 200 -
+2026-05-06 22:24:44,478 - INFO - 127.0.0.1 - - [06/May/2026 22:24:44] "GET /orders/1 HTTP/1.1" 200 -
+2026-05-06 22:25:51,981 - INFO - 127.0.0.1 - - [06/May/2026 22:25:51] "GET /orders/4 HTTP/1.1" 200 -
+2026-05-06 22:25:59,265 - INFO - 127.0.0.1 - - [06/May/2026 22:25:59] "GET /orders/6 HTTP/1.1" 200 -
+2026-05-06 22:27:30,720 - INFO - 127.0.0.1 - - [06/May/2026 22:27:30] "GET /all-orders HTTP/1.1" 200 -
+2026-05-06 22:28:09,752 - INFO - 127.0.0.1 - - [06/May/2026 22:28:09] "[33mGET /user HTTP/1.1[0m" 404 -
+2026-05-06 22:28:15,997 - INFO - 127.0.0.1 - - [06/May/2026 22:28:15] "[33mGET /users HTTP/1.1[0m" 404 -
+2026-05-06 22:28:33,751 - INFO - 127.0.0.1 - - [06/May/2026 22:28:33] "[33mGET /users HTTP/1.1[0m" 404 -
+2026-05-06 22:32:47,316 - INFO -  * Detected change in 'C:\\Users\\Mallikarjuna\\ecommerce_backend\\app.py', reloading
+2026-05-06 22:32:47,432 - INFO -  * Restarting with stat
+2026-05-06 22:32:48,242 - WARNING -  * Debugger is active!
+2026-05-06 22:32:48,247 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:34:15,039 - INFO -  * Detected change in 'C:\\Users\\Mallikarjuna\\ecommerce_backend\\routes\\order_routes.py', reloading
+2026-05-06 22:34:15,145 - INFO -  * Restarting with stat
+2026-05-06 22:34:16,080 - WARNING -  * Debugger is active!
+2026-05-06 22:34:16,084 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:34:17,184 - INFO -  * Detected change in 'C:\\Users\\Mallikarjuna\\ecommerce_backend\\app.py', reloading
+2026-05-06 22:34:17,317 - INFO -  * Restarting with stat
+2026-05-06 22:34:18,246 - WARNING -  * Debugger is active!
+2026-05-06 22:34:18,248 - INFO -  * Debugger PIN: 106-346-203
+2026-05-06 22:34:20,346 - INFO -  * Detected change in 'C:\\Users\\Mallikarjuna\\ecommerce_backend\\routes\\auth_routes.py', reloading
+2026-05-06 22:34:20,435 - INFO -  * Restarting with stat
+2026-05-06 22:34:21,224 - WARNING -  * Debugger is active!
+2026-05-06 22:34:21,228 - INFO -  * Debugger PIN: 106-346-203

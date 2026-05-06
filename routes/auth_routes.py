@@ -3,6 +3,9 @@ from database.db import db
 from models.user import User
 from werkzeug.security import generate_password_hash
 from werkzeug.security import check_password_hash
+from flask_jwt_extended import create_access_token
+import logging
+
 
 auth_bp = Blueprint("auth", __name__)
 
@@ -38,26 +41,32 @@ def register():
         "message": "User registered successfully"
     }), 201
 
+
+
+import logging
+from werkzeug.security import check_password_hash
+from flask import request
+
 @auth_bp.route("/login", methods=["POST"])
 def login():
-    data = request.get_json()
+    data = request.json
 
-    username = data.get("username")
-    password = data.get("password")
+    # ✅ SAFE CHECK
+    if not data or "username" not in data or "password" not in data:
+        logging.warning("Login attempt with missing fields")
+        return {"message": "Missing username or password"}, 400
 
-    if not username or not password:
-        return jsonify({"error": "Missing fields"}), 400
+    user = User.query.filter_by(username=data["username"]).first()
 
-    user = User.query.filter_by(username=username).first()
+    if not user or not check_password_hash(user.password, data["password"]):
+        logging.warning(f"Failed login attempt for username: {data.get('username')}")
+        return {"message": "Invalid credentials"}, 401
 
-    if not user:
-        return jsonify({"error": "User not found"}), 404
+    access_token = create_access_token(identity=str(user.id))
 
-    if not check_password_hash(user.password, password):
-        return jsonify({"error": "Invalid password"}), 401
+    logging.info(f"User logged in: {user.username}")
 
-    return jsonify({
+    return {
         "message": "Login successful",
-        "user_id": user.id,
-        "role": user.role
-    })
+        "token": access_token
+    }

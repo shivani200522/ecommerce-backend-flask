@@ -1,36 +1,77 @@
-# Digital Product Marketplace API
+# 🛒 E-Commerce Backend (Flask)
 
-## Description
-A REST API built using Flask for a digital product marketplace where users can register, login, upload products, and purchase them.
+## 📌 Overview
 
-## Features
-- User Authentication (Register/Login)
-- Product Management (Add/View)
-- Order System (Purchase/View Orders)
+This is a RESTful E-commerce backend built using Flask.
+It supports user authentication, product management, and order processing.
 
-## Tech Stack
-- Flask
-- SQLite
-- SQLAlchemy
+---
 
-## API Endpoints
+## 🚀 Features
+
+* User Registration & Login
+* JWT Authentication
+* Role-Based Access (Seller / Buyer)
+* Product Management
+* Order Management
+* Logging System
+
+---
+
+## 🛠 Tech Stack
+
+* Python (Flask)
+* SQLite
+* SQLAlchemy
+* JWT (Authentication)
+
+---
+
+## 📂 API Endpoints
 
 ### Auth
-POST /register  
-POST /login  
+
+* POST `/register`
+* POST `/login`
 
 ### Products
-POST /add-product  
-GET /products  
+
+* POST `/add-product` (Seller only)
+* GET `/products`
 
 ### Orders
-POST /create-order  
-GET /orders/<user_id>  
 
-## How to Run
+* POST `/create-order` (Buyer only)
+* GET `/orders`
+* GET `/all-orders`
 
-1. Install dependencies:
+---
+
+## ▶️ How to Run
+
+```bash
 pip install -r requirements.txt
-
-2. Run server:
 python app.py
+```
+
+---
+
+## 🧪 Testing
+
+Use Postman to test APIs.
+
+---
+
+## 📊 Database
+
+SQLite database managed via SQLAlchemy ORM.
+
+---
+
+## 📜 Logging
+
+Logs stored in `logs/app.log`
+
+---
+
+
